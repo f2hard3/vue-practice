@@ -1,28 +1,47 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div>
+        <input type="text" v-model="message" />
+        <button @click="sendMessage()">+</button>
+
+        <message
+            v-for="message in messageList"
+            :message-text="message.text"
+            :key="`${message.text}${message}`"
+        >
+            <h2 slot="date">{{ message.date | date }}</h2>
+        </message>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import convertDateToString from './filters/date.filter';
+import Message from './components/Message';
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    components: {
+        Message
+    },
+    filters: {
+        date: convertDateToString
+    },
+    data() {
+        return {
+            message: '',
+            messageList: []
+        };
+    },
+    methods: {
+        sendMessage() {
+            if (this.message)
+                this.messageList.push({ date: new Date(), text: this.message });
+            this.message = '';
+        }
+    }
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+    text-align: center;
 }
 </style>
