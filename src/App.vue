@@ -1,17 +1,11 @@
 <template>
-    <div>
-        <Socket />
+    <div id="app">
+        <router-view />
     </div>
 </template>
 
 <script>
-import Socket from './components/Socket';
-
-export default {
-    components: {
-        Socket
-    }
-};
+export default {};
 </script>
 
 <style></style>
