@@ -1,11 +1,14 @@
 <template>
     <div id="app">
-        <router-view />
+        <Count />
     </div>
 </template>
 
 <script>
-export default {};
+import Count from './components/Count';
+export default {
+    components: { Count }
+};
 </script>
 
 <style></style>

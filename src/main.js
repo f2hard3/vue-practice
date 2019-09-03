@@ -1,8 +1,9 @@
 import Vue from 'vue';
-import App from './App.vue';
+import App from './App';
 import 'animate.css';
-import router from './router';
+import store from './store/index';
 
+// import router from './router';
 // import Navbar from './components/Navbar';
 // import ConnectionStatus from './components/ConnectionStatus';
 // import Vueliate from 'vuelidate';
@@ -27,6 +28,6 @@ import router from './router';
 Vue.config.productionTip = false;
 
 new Vue({
-    router,
+    store,
     render: h => h(App)
 }).$mount('#app');
