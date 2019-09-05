@@ -1,14 +1,21 @@
 /* eslint-disable no-console */
 import Vue from 'vue';
 import Router from 'vue-router';
-import { userRoutes } from './components/user/user.routes';
+import TodoList from './components/TodoList';
+// import { userRoutes } from './components/user/user.routes';
 
 Vue.use(Router);
 
 export default new Router({
     mode: 'history',
     base: process.env.BASE_URL,
-    routes: [...userRoutes]
+    routes: [
+        {
+            path: '/',
+            name: 'TodoList',
+            component: TodoList
+        }
+    ]
 });
 
 // router.beforeEach((to, from, next) => {

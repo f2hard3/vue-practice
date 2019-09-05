@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1567697297961" clover="3.2.0">
+  <project timestamp="1567697297961" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="8" coveredelements="8" complexity="0" loc="8" ncloc="8" packages="1" files="2" classes="2">
+      <file name="TodoInput.vue" path="/Users/f2hard3/Workspace/vue-practice/src/components/TodoInput.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+      </file>
+      <file name="TodoList.vue" path="/Users/f2hard3/Workspace/vue-practice/src/components/TodoList.vue">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
