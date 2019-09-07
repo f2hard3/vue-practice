@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+    - '12.8.1'
+
+branches:
+    only:
+        - master
+script:
+    - npm run build
+    - npm run test:unit
+
+notifications:
+    email:
+        recipients:
+            - f2hard3@gmail.com
+        on_success: always
+        on_failure: always
