@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App';
 import 'animate.css';
 import store from './store/index';
+import './registerServiceWorker'
 
 // import router from './router';
 // import Navbar from './components/Navbar';
