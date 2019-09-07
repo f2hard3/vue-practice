@@ -1,13 +1,16 @@
 <template>
     <div id="app">
-        <Count />
+        {{ msg }}
     </div>
 </template>
 
 <script>
-import Count from './components/Count';
 export default {
-    components: { Count }
+    data() {
+        return {
+            msg: 'Welcome to your Vue.js PWA! Deployed to Firebase by Travis CI'
+        };
+    }
 };
 </script>
 
